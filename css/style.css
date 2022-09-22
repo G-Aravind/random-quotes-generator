@@ -1,0 +1,336 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: rgb(18, 125, 224);
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-container {
+  margin-top: px;
+  height: 350px;
+  text-align: center;
+  width: 270px;
+}
+
+#quote-text {
+  font-size: 22px;
+  font-family: "Staatliches", cursive;
+  font-family: "Righteous", cursive;
+
+  color: #fff;
+  padding: 0px 0px 10px 0;
+}
+i {
+  padding: 5px;
+}
+
+#quote-author {
+  color: #fff;
+  font-family: "Alata", sans-serif;
+  padding: 0px 0px 50px 0px;
+}
+
+.alert-container {
+  display: flex;
+  margin-top: -50px;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+#copy-alert {
+  display: none;
+  height: 30px;
+  margin-left: 10px;
+  color: #000;
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 4px 0 0 19px;
+
+  width: 100px;
+
+  padding: px;
+}
+
+#btn-container {
+  padding: 10px;
+  background: black;
+  border-radius: 50px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  margin-bottom: -40px;
+  justify-content: center;
+}
+
+#speech-btn {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-image: linear-gradient(
+    117deg,
+    rgba(123, 216, 96, 1) 39.2%,
+    rgba(255, 255, 255, 1) 156.2%
+  );
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#cancel-btn {
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(161, 255, 255, 1) 11.3%,
+    rgba(6, 255, 255, 1) 41.2%,
+    rgba(0, 216, 216, 1) 77.8%
+  );
+  width: 40px;
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#colorBtn {
+  border: none;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(255, 174, 0, 1) 11.2%,
+    rgba(255, 0, 0, 1) 100.2%
+  );
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 70%;
+}
+
+#quote-btn {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(37, 145, 251, 0.98) 0.1%,
+    rgba(0, 7, 128, 1) 99.8%
+  );
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#copy-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 70%;
+  color: white;
+  background-image: radial-gradient(
+    circle farthest-corner at 10.2% 55.8%,
+    rgba(252, 37, 103, 1) 0%,
+    rgba(250, 38, 151, 1) 46.2%,
+    rgba(186, 8, 181, 1) 90.1%
+  );
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#twitter-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 70%;
+  color: white;
+  background-image: radial-gradient(
+    circle 957px at 8.7% 50.5%,
+    rgba(246, 191, 13, 1) 0%,
+    rgba(249, 47, 47, 1) 90%
+  );
+  font-size: 18px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#speech-btn:focus {
+  color: rgb(15, 177, 241);
+  color: #000;
+}
+
+#copy-btn:active {
+  color: rgb(15, 177, 241);
+  color: #000;
+}
+#colorBtn:active {
+  color: rgb(15, 177, 241);
+  color: #000;
+}
+
+#twitter-btn:active {
+  color: rgb(15, 177, 241);
+  color: #000;
+}
+
+#cancel-btn:focus {
+  color: rgb(15, 177, 241);
+  color: #000;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+@media (max-width: 700px) {
+  #btn-container {
+    padding: 10px;
+    background: black;
+    border-radius: 50px;
+    width: 90%;
+    height: 65px;
+    display: flex;
+    margin-bottom: -40px;
+    justify-content: center;
+  }
+
+  #speech-btn {
+    cursor: pointer;
+    color: #fff;
+    background-image: linear-gradient(
+      117deg,
+      rgba(123, 216, 96, 1) 39.2%,
+      rgba(255, 255, 255, 1) 156.2%
+    );
+    width: 40px;
+    font-size: 14px;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  #cancel-btn {
+    cursor: pointer;
+    color: #fff;
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(161, 255, 255, 1) 11.3%,
+      rgba(6, 255, 255, 1) 41.2%,
+      rgba(0, 216, 216, 1) 77.8%
+    );
+    width: 40px;
+    font-size: 14px;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  #colorBtn {
+    width: 40px;
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(255, 174, 0, 1) 11.2%,
+      rgba(255, 0, 0, 1) 100.2%
+    );
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 70%;
+  }
+
+  #quote-btn {
+    cursor: pointer;
+    color: white;
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(37, 145, 251, 0.98) 0.1%,
+      rgba(0, 7, 128, 1) 99.8%
+    );
+    font-size: 9px;
+    border-radius: 20px;
+    margin: 4px;
+    padding: 5px;
+  }
+
+  #copy-btn {
+    width: 40px;
+    cursor: pointer;
+    border-radius: 70%;
+    color: white;
+    background-image: radial-gradient(
+      circle farthest-corner at 10.2% 55.8%,
+      rgba(252, 37, 103, 1) 0%,
+      rgba(250, 38, 151, 1) 46.2%,
+      rgba(186, 8, 181, 1) 90.1%
+    );
+    font-size: 14px;
+    margin: 4px;
+    padding: 5px;
+  }
+
+  #twitter-btn {
+    width: 40px;
+    cursor: pointer;
+    border-radius: 70%;
+    color: white;
+    background-image: radial-gradient(
+      circle 957px at 8.7% 50.5%,
+      rgba(246, 191, 13, 1) 0%,
+      rgba(249, 47, 47, 1) 90%
+    );
+    font-size: 14px;
+    margin: 4px;
+    padding: 5px;
+  }
+
+  #copy-alert {
+    height: 30px;
+    margin-left: 10px;
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 4px 0 0 19px;
+    margin-top: -100px;
+    width: 100px;
+
+    padding: px;
+  }
+}
+
+.end {
+  text-align: center;
+  margin-top: 30px;
+  opacity: 0.3;
+  padding-left: 7px;
+  border-radius: 20px;
+  font-size: 25px;
+
+  color: #fff;
+  color: #000;
+  font-weight: 500;
+}
+
+span {
+  font-size: 10px;
+}
